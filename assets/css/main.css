@@ -40,6 +40,7 @@ body {
   width: 100%;
   height: 700px;
   color: #fff;
+  margin-bottom: 100px;
 }
 .home .wrap {
   width: 70%;
@@ -78,4 +79,13 @@ body {
   width: 100%;
   text-align: center;
   font-size: 10px;
+}
+/* Section mapa */
+.mapa {
+  width: 100%;
+  height: 600px;
+}
+.mapa iframe {
+  width: 100%;
+  height: 100%;
 }

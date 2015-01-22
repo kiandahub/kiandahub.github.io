@@ -9,10 +9,14 @@ html(lang="pt-pt")
 	body
 		// Cabecalho
 		header.mainHeader
-			img(src="assets/img/logotipo.png" class="logotipo")
+			a(href="/")
+				img(src="assets/img/logotipo.png" class="logotipo")
 
 		// Home
 		include _seccoes/home
+
+		// Mapa
+		include _seccoes/mapa
 	
 		// Javascript
 		script(src="assets/js/main.js")
