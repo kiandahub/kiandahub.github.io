@@ -2,17 +2,74 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.ttf");
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/Lato-Light.ttf");
+}
 body {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
+  font-family: "Lato-Regular";
 }
 .mainHeader {
   width: 100%;
-  height: 30px;
+  height: 40px;
   display: flex;
   justify-content: center;
   background-color: #fff;
+  padding: 2px 0;
 }
 .mainHeader .logotipo {
-  width: 105px;
+  width: 150px;
+}
+.home {
+  width: 100%;
+  height: 700px;
+  color: #fff;
+}
+.home .wrap {
+  width: 70%;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+.home article {
+  width: 368px;
+}
+.home article .title {
+  font-size: 32px;
+  font-family: "Lato-Black";
+}
+.home article .btn {
+  width: 180px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #333;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Lato-Regular";
+  transition: background-color 0.5s;
+}
+.home article .btn:hover {
+  background-color: #50a2de;
+}
+.home article .btn:last-child {
+  margin-left: 8px;
+}
+.home .baixo {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
 }
