@@ -24,7 +24,7 @@ gulp.task("watch", function(){
 	gulp.watch("./src/stylus/*.styl", ["stylus"]);
 
 	// Jade
-	gulp.watch("./src/*/**", ["jade"]);
+	gulp.watch(["./src/*.jade" ,"./src/*/**.jade"], ["jade"]);
 });
 
 // Default task
