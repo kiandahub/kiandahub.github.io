@@ -1,0 +1,31 @@
+{
+  "name": "KiandaHUB",
+  "version": "1.0.0",
+  "description": "Landing page do KiandHUB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiandahub/landing_page.git"
+  },
+  "keywords": [
+    "KiandaHUB",
+    "TechHUB",
+    "Luanda",
+    "Angola"
+  ],
+  "author": "Flowck II <flowck96@hotmail.com> (http://flowck.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kiandahub/landing_page/issues"
+  },
+  "homepage": "https://github.com/kiandahub/landing_page",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jade": "^0.10.0",
+    "gulp-stylus": "^2.0.0",
+    "gulp-watch": "^4.0.2"
+  }
+}
