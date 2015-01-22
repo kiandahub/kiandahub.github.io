@@ -15,13 +15,13 @@
   src: url("../fonts/Lato-Light.ttf");
 }
 body {
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background2.jpg");
   background-repeat: no-repeat;
   font-family: "Lato-Regular";
 }
 .mainHeader {
   width: 100%;
-  height: 40px;
+  height: 44px;
   display: flex;
   justify-content: center;
   background-color: #fff;
@@ -29,6 +29,12 @@ body {
 }
 .mainHeader .logotipo {
   width: 150px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+.mainHeader .logotipo:hover {
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
 }
 .home {
   width: 100%;
@@ -54,8 +60,8 @@ body {
   height: 35px;
   border: none;
   border-radius: 3px;
-  background-color: #fff;
-  color: #333;
+  background-color: #50a2de;
+  color: #eee;
   margin-top: 10px;
   font-size: 14px;
   cursor: pointer;
@@ -63,7 +69,7 @@ body {
   transition: background-color 0.5s;
 }
 .home article .btn:hover {
-  background-color: #50a2de;
+  background-color: #35678a;
 }
 .home article .btn:last-child {
   margin-left: 8px;
