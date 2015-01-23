@@ -29,6 +29,11 @@ body
 	justify-content center
 	background-color #FFF
 	padding 2px 0
+	position fixed
+	z-index 9999
+	
+.scrollEffect
+	box-shadow 1px 0px 4px #666
 	
 .mainHeader .logotipo
 	width 150px
@@ -54,15 +59,18 @@ body
 	display flex
 	align-items flex-end
 
+p
+	color #FFF
+
 .home article
 	width 368px
 	//border 1px solid red
 	
-.home article .title
+article .title, .title
 	font-size 32px
 	font-family "Lato-Black"
 	
-.home article .btn
+article .btn
 	width 180px
 	height 35px
 	border none
@@ -75,12 +83,21 @@ body
 	font-family "Lato-Regular"
 	transition background-color .5s
 	
-.home article .btn:hover
+article .btn:focus
+	outline none
+
+article .btn:hover
 	//color #FFF
 	background-color #35678a
 
-.home article .btn:last-child
+article a
+	text-decoration none
+
+.home article a:last-child
 	margin-left 8px
+	
+.home article .controls
+	display flex
 
 .home .baixo
 	width 100%
@@ -90,9 +107,119 @@ body
 /* Section mapa */
 .mapa
 	width 100%
-	height 600px
+	height 800px
 	//border 1px solid red
 	
 .mapa iframe
 	width 100%
 	height 100%
+	
+/* Section faça parte */
+.facaparte
+	width 100%
+	height 800px
+	background-image url("../img/back_facaparte.jpg")
+	background-size cover
+	display flex
+	align-items center
+	justify-content center
+	position relative
+	/*z-index 9997*/
+	
+.facaparte article
+	width 393px
+	//border 1px solid red
+		
+.facaparte article .btn
+	margin-left 0
+	
+/* Section form fazer parte / lightbox */ 
+.form_fazerparte
+	width 100%
+	height 100%
+	position absolute
+	top 0
+	left 0
+	background-color rgba(0, 0, 0, .5);
+	display flex
+	justify-content center
+	align-items center
+	//display none
+	
+.formLightBox
+	width 30%
+	background-color #50a2de
+	height 500px
+	border-radius 3px
+	padding-top 10px
+	
+.formLightBox .fechar
+	color #FFF
+	float right
+	cursor pointer
+	margin-right 10px
+
+.formLightBox header
+	text-align center
+
+.formLightBox .desc
+	margin 10px 0
+	font-size 14px
+	color #DDD
+
+.formBody
+	width 90%
+	margin 0 auto
+	
+input[type="text"], input[type="email"]
+	width 98%
+	height 40px
+	background-color #00709e
+	border none
+	border-radius 3px
+	padding-left 8px
+	color #EEE
+	margin-top 10px
+	-webkit-transition background-color .5s
+	-moz-transition background-color .5s
+	-ms-transition background-color .5s
+	transition background-color .5s
+	
+// Remove outline of Chrome on Focus
+input[type="text"]:focus, input[type="email"]:focus, .formBody select:focus
+	outline none
+	background-color #35678a
+	
+.formBody select
+	border none
+	background-color #00709e
+	width 100%
+	height 40px
+	padding-left 8px
+	color #FFF
+	border-radius 3px
+	cursor pointer
+	-webkit-transition background-color .5s
+	-moz-transition background-color .5s
+	-ms-transition background-color .5s
+	transition background-color .5s
+
+.formBody .subForm
+	width 100%
+	//border 1px solid red
+	display flex
+
+::-webkit-input-placeholder
+	color #FFF	
+	
+.subForm input[type="text"], .subForm input[type="email"]
+	width 50%
+	
+.subForm input:last-child
+	margin-left 10px
+	
+.formLightBox footer
+	width 100%
+	height 100px
+	clear both
+	background-color #DDD
