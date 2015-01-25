@@ -6,18 +6,28 @@
 			p.desc Insira os seus dados e faça parte do KiandaHUB, a casa das startups e do empreendedorismo digital. 
 		.formBody
 			form
-				input(type="text" placeholder="NOME")
-				.subForm
-					input(type="email" placeholder="E-MAIL")
-					input(type="text" placeholder="TELEFONE")
-				.subForm
-					input(type="text" placeholder="PAÍS")
-					input(type="text" placeholder="MORADA")
-				p.desc Interessado em?
-				.subForm					
-					select(name="interessado")
-						option(value="startup") -
-						option(value="startup") Startups
-						option(value="investidor") Investir em startups
-						option(value="mentor") Ser um mentor
+				.formBasico
+					input(type="text" placeholder="NOME" class="inputField")
+					.subForm
+						input(type="email" placeholder="E-MAIL" class="inputField")
+						input(type="text" placeholder="TELEFONE" class="inputField")
+					.subForm
+						input(type="text" placeholder="PAÍS" class="inputField")
+						input(type="text" placeholder="MORADA" class="inputField")
+					p.desc Interessado em?
+					.subForm					
+						select(name="interessado" class="interessado inputField")
+							option(value="-") -
+							option(value="startup") Startups
+							option(value="investidor") Investir em startups
+							option(value="mentor") Ser um mentor
+				.startup
+					h1 Startups
+				.investidor
+					h1 investidores
+				.mentor
+					h1 mentor
 		footer
+			.wrap
+				input(type="button" value="Próximo" class="btn proximo" disabled)
+				input(type="button" value="Registar" class="btn registar")

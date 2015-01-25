@@ -230,3 +230,12 @@ input[type="email"]:focus,
   height: 50px;
   margin: 0 auto;
 }
+.formLightBox footer .proximo:disabled {
+  background-color: #333;
+  cursor: default;
+}
+.startup,
+.investidor,
+.mentor {
+  display: none;
+}
