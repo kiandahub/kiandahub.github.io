@@ -172,7 +172,7 @@ article a
 	width 90%
 	margin 0 auto
 	
-input[type="text"], input[type="email"]
+input[type="text"], input[type="email"], input[type="date"]
 	width 98%
 	height 40px
 	background-color #00709e
@@ -186,8 +186,12 @@ input[type="text"], input[type="email"]
 	-ms-transition background-color .5s
 	transition background-color .5s
 	
+input[type="date"]
+	width 96%
+	margin-right 10px
+	
 // Remove outline of Chrome on Focus
-input[type="text"]:focus, input[type="email"]:focus, .formBody select:focus
+input[type="text"]:focus, input[type="email"]:focus, .formBody select:focus, textarea:focus, input[type="date"]:focus
 	outline none
 	background-color #35678a
 	
@@ -204,6 +208,25 @@ input[type="text"]:focus, input[type="email"]:focus, .formBody select:focus
 	-moz-transition background-color .5s
 	-ms-transition background-color .5s
 	transition background-color .5s
+	
+textarea
+	width 96%
+	height 100px
+	background-color #00709e
+	border none
+	border-radius 3px
+	padding 8px
+	margin-top 10px
+	color #FFF
+	resize none
+	-webkit-transition background-color .5s
+	-moz-transition background-color .5s
+	-ms-transition background-color .5s
+	transition background-color .5s
+	
+.subForm .nivel_academico
+	width 98%
+	margin-top 10px
 
 .formBody .subForm
 	width 100%
@@ -237,9 +260,17 @@ input[type="text"]:focus, input[type="email"]:focus, .formBody select:focus
 	height 50px
 	margin 0 auto
 	
-.formLightBox footer .proximo:disabled
+.formLightBox footer .proximo:disabled, .formLightBox footer .registar:disabled
 	background-color #333
 	cursor default
 	
+/*.formBasico
+	display none*/
+
 .startup, .investidor, .mentor
+	width 100%
+	margin 0 auto
 	display none
+	
+/*.startup
+	display block*/
