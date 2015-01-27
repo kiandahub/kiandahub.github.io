@@ -136,6 +136,7 @@ article a {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .formLightBox {
   width: 30%;
@@ -261,8 +262,6 @@ textarea {
   background-color: #333;
   cursor: default;
 }
-/*.formBasico
-	display none*/
 .startup,
 .investidor,
 .mentor {
@@ -270,5 +269,3 @@ textarea {
   margin: 0 auto;
   display: none;
 }
-/*.startup
-	display block*/
