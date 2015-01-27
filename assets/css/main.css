@@ -41,6 +41,23 @@ body {
   -webkit-transform: scale(0.9, 0.9);
   transform: scale(0.9, 0.9);
 }
+.mainHeader ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.mainHeader ul a {
+  color: #333;
+  text-decoration: none;
+}
+.mainHeader ul li:first-child {
+  width: 122px;
+}
+.mainHeader ul li:last-child {
+  width: 122px;
+  text-align: right;
+}
 .home {
   width: 100%;
   height: 700px;

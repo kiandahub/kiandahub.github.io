@@ -11,8 +11,14 @@ html(lang="pt-pt")
 	body
 		// Cabecalho
 		header.mainHeader.scrollEffect
-			a(href="/")
-				img(src="assets/img/logotipo.png" class="logotipo")
+			ul
+				li 
+					a(href="#mapa" class="scroll") COMO CHEGAR
+				li
+					a(href="/")
+						img(src="assets/img/logotipo.png" class="logotipo")
+				li 
+					a(href="#inscricao" class="scroll") INSCREVER-ME
 
 		// Home
 		include _seccoes/home
@@ -22,9 +28,11 @@ html(lang="pt-pt")
 
 		// Faça parte
 		include _seccoes/facaparte
+
+		// Rodapé
+		include _seccoes/footer
 	
 		// Javascript
 		script(src="assets/js/libs/scroll.min.js")
-		script(src="assets/js/form.js")
 		script(src="assets/js/main.js")
 	
