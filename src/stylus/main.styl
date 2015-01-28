@@ -53,6 +53,13 @@ body
 .mainHeader ul a
 	color #333
 	text-decoration none
+	-wekit-transition color .5s
+	-moz-transition color .5s
+	-ms-transition color .5s
+	transition color .5s
+	
+.mainHeader ul a:hover
+	color #50a2de
 	
 .mainHeader ul li:first-child
 	width 122px
@@ -285,3 +292,26 @@ textarea
 	width 100%
 	margin 0 auto
 	display none
+
+.mainFooter
+	width 100%
+	height 100px
+	display flex
+	//flex-direction column
+	background-color #ddd
+	justify-content center
+	align-items center
+	
+.mainFooter .wrap
+	margin-left 12px
+
+.mainFooter p
+	color #333
+	font-size 13px
+	
+.mainFooter a
+	color #333
+	text-decoration none
+
+.mainFooter .logotipoBottom img
+	width 40px
