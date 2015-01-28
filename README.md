@@ -1,5 +1,7 @@
 # KiandaHUB - Landing page
 
+O KiandaHub é um espaço de colaboração entre os novos talentos da tecnologia angolana (startups).
+
 ## Contribuir
 
 Tendo o NodeJS instalado na sua máquina, abra o terminal e execute:
@@ -8,9 +10,10 @@ Tendo o NodeJS instalado na sua máquina, abra o terminal e execute:
 	cd landing_page
 
 	// Instale as dependências
-	sudo npm i && sudo npm i -g gulp 
+	sudo npm i -g gulp && sudo npm i
 
-	// Execute o comando gulp no seu terminal
+	// Execute o task runner com o comando
+	gulp
 
 ## Organização dos ficheiros / directórias
 
@@ -19,14 +22,23 @@ Tendo o NodeJS instalado na sua máquina, abra o terminal e execute:
 		|_/fonts
 		|_/img
 		|_/js
-	 src
-		|_assets
-			|_/css
-			|_/fonts
-			|_/img
-			|_/js
+	src
+		|_/_seccoes			
+				|_facaparte.jade
+				|_footer.jade
+				|_form.jade
+				|_home.jade
+				|_mapa.jade
+		|_/stylus
+				|_main.styl
 		|_index.jade
-		|_gulpfile.js
-		|_package.json
+	|_index.html
+	|_.gitignore
+	|_gulpfile.js
+	|_package.json
 
 A directoria src/ contem o código fonte em .jade (HTML) e .styl (CSS).
+
+##TO-DO
+
+~~Enviar os dados do form no Google Drive Spreadsheets~~
