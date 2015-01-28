@@ -24,6 +24,7 @@
   "homepage": "https://github.com/kiandahub/landing_page",
   "devDependencies": {
     "gulp": "^3.8.10",
+    "gulp-eslint": "^0.2.2",
     "gulp-jade": "^0.10.0",
     "gulp-stylus": "^2.0.0",
     "gulp-watch": "^4.0.2"
