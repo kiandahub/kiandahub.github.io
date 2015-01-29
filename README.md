@@ -42,3 +42,6 @@ A directoria src/ contem o código fonte em .jade (HTML) e .styl (CSS).
 ##TO-DO
 
 ~~Enviar os dados do form no Google Drive Spreadsheets~~
+~~Adicionar o rodapé.~~
+Optimização para os mobiles (responsive design).
+Modularizar o ficheiro main.styl (estilos css).

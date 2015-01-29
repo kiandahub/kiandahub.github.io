@@ -5,57 +5,57 @@
 			p.title Junte-se a nós
 			p.desc Insira os seus dados e faça parte do KiandaHUB, a casa das startups e do empreendedorismo digital. 
 		.formBody
-			form
+			form(method="POST" class="mainForm")
 				p.desc Os campos com * são obrigatórios.
 				.formBasico
-					input(type="text" placeholder="NOME *" class="inputField")
+					input(type="text" placeholder="NOME *" class="inputField i_nome" name="entry.250421101")
 					.subForm
-						input(type="email" placeholder="E-MAIL *" class="inputField")
-						input(type="text" placeholder="TELEFONE" class="inputField")
+						input(type="email" placeholder="E-MAIL *" class="inputField i_email" name="entry.1929566306")
+						input(type="text" placeholder="TELEFONE" class="inputField i_telefone" name="entry.1188954101")
 					.subForm
-						input(type="text" placeholder="PAÍS *" class="inputField")
-						input(type="text" placeholder="MORADA" class="inputField")
+						input(type="text" placeholder="PAÍS *" class="inputField i_pais" name="entry.236325354")
+						input(type="text" placeholder="MORADA" class="inputField i_morada" name="entry.1769854544")
 					.subForm
-						input(type="date" placeholder="DATA DE NASCIMENTO" class="inputField")
-						select(name="academico" class="nivel_academico inputField")
+						input(type="date" placeholder="DATA DE NASCIMENTO" class="inputField i_data_de_nascimento" name="entry.1159572353")
+						select(name="entry.1170105695" class="nivel_academico inputField i_nivel_academico")
 							option(value="") NÍVEL ACADÉMICO
-							option(value="ensinomedio") Ensino médio
-							option(value="licenciatura") Licenciatura
-							option(value="posgraduado") Pós graduado
-							option(value="doutoramento") Doutoramento
+							option(value="Ensino médio") Ensino médio
+							option(value="Licenciatura") Licenciatura
+							option(value="Pós graduado") Pós graduado
+							option(value="Doutoramento") Doutoramento
 					p.desc Interessado em?
 					.subForm					
-						select(name="interessado" class="interessado inputField")
+						select(name="entry.292287562" class="interessado inputField i_interessado_em")
 							option(value="") -
-							option(value="startup") Startups
-							option(value="investidor") Investir em startups
-							option(value="mentor") Ser um mentor
+							option(value="Startup") Startups
+							option(value="Investir em startups") Investir em startups
+							option(value="Ser um mentor") Ser um mentor
 				.startup
-					input(type="text" placeholder="NOME DA STARTUP*")
+					input(type="text" placeholder="NOME DA STARTUP*" class="i_nome_da_startup" name="entry.93544234")
 					.subForm
-						input(type="text" placeholder="URL")
-						input(type="email" placeholder="EMAIL*")
-					textarea(placeholder="SOBRE A STARTUP (Fundação, projectos, áreas de interesse...)*")
+						input(type="text" placeholder="URL" class="i_url" name="entry.2068591985")
+						input(type="email" placeholder="EMAIL*" class="i_email_da_startup" name="entry.1515064231")
+					textarea(placeholder="SOBRE A STARTUP*" class="i_sobre_a_startup" name="entry.745620118")
 				.investidor
 					.subForm
-						input(type="text" placeholder="EMPRESA*")
-						input(type="text" placeholder="CARGO*")
+						input(type="text" placeholder="EMPRESA*" class="i_empresa" name="entry.745620118")
+						input(type="text" placeholder="CARGO*" class="i_cargo" name="entry.2068591985")
 					p.desc Já investiu antes?
-					input(type="radio" name="ja_investiu" value="Sim")
+					input(type="radio" name="entry.1515064231" value="Sim" class="i_ja_investiu")
 					span.desc Sim 
-					input(type="radio" name="ja_investiu" value="Não")
+					input(type="radio" name="entry.1515064231" value="Não" class="i_ja_investiu")
 					span.desc Não
-					textarea(placeholder="PROJECTOS INVESTIDOS")
+					textarea(placeholder="PROJECTOS INVESTIDOS" class="i_projectos_investidos" name="entry.745620118")
 				.mentor
 					.subForm
-						input(type="text" placeholder="EMPRESA*")
-						input(type="text" placeholder="CARGO*")
+						input(type="text" placeholder="EMPRESA*" class="i_empresa_mentor" name="entry.93544234")
+						input(type="text" placeholder="CARGO*" class="i_cargo_mentor" name="entry.2068591985")
 					p.desc Já foi mentor antes?
-					input(type="radio" name="ja_mentor" value="Sim")
+					input(type="radio" name="entry.1515064231" value="Sim" class="i_ja_foi_mentor")
 					span.desc Sim 
-					input(type="radio" name="ja_mentor" value="Não")
+					input(type="radio" name="entry.1515064231" value="Não" class="i_ja_foi_mentor")
 					span.desc Não
-					textarea(placeholder="FALE SOBRE ESSA EXPERIÊNCIA*")
+					textarea(placeholder="FALE SOBRE ESSA EXPERIÊNCIA*" class="i_fale_sobre" name="entry.2068591985")
 		footer
 			.wrap
 				input(type="button" value="Próximo" class="btn proximo" disabled)

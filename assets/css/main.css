@@ -17,6 +17,7 @@
 body {
   background-image: url("../img/background2.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Lato-Regular";
 }
 .mainHeader {
@@ -137,6 +138,7 @@ article a {
   height: 800px;
   background-image: url("../img/back_facaparte.jpg");
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,4 +316,21 @@ textarea {
 }
 .mainFooter .logotipoBottom img {
   width: 40px;
+}
+.slide {
+  margin: 0 auto;
+  width: inherit;
+  height: 115px;
+  overflow: hidden;
+}
+.slide div {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  height: inherit;
+  width: inherit;
 }
