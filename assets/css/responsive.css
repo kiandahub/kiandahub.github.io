@@ -1,0 +1,66 @@
+@media screen and (max-width: 360px) {
+  body {
+    background-size: 586px 334px;
+    background-position-x: -160px;
+    background-attachment: initial;
+  }
+  .mainHeader ul li:first-child,
+  .mainHeader ul li:last-child {
+    display: none;
+  }
+  .home {
+    height: 558px;
+  }
+  .home .wrap {
+    width: 96%;
+  }
+  .home article {
+    width: initial;
+    text-align: center;
+  }
+  .home article .title {
+    font-size: 25px;
+  }
+  .home article p {
+    color: #333;
+  }
+  .home article .slide {
+    height: 75px;
+  }
+  .controls {
+    margin-top: 20px;
+  }
+  .controls .btn {
+    width: 169px;
+  }
+  .facaparte {
+    height: 538px;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: 586px 334px;
+    background-position-x: -160px;
+  }
+  .facaparte article {
+    width: 96%;
+    color: #333;
+  }
+  .facaparte article p {
+    color: #333;
+  }
+  .facaparte article .title {
+    font-size: 28px;
+  }
+  .facaparte article a {
+    display: flex;
+  }
+  .facaparte article .btn {
+    margin: 10px auto;
+  }
+  .mainFooter {
+    margin-top: 20px;
+  }
+  .mainFooter .logotipoBottom img {
+    width: 28px;
+  }
+}
