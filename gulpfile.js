@@ -3,7 +3,8 @@ var gulp = require("gulp");
 // Plugins
 var jade = require("gulp-jade"),
 	stylus = require("gulp-stylus"),
-	watch = require("gulp-watch");
+	watch = require("gulp-watch")
+	eslint = require("gulp-eslint");
 
 // Start doing the tasks :)
 gulp.task("jade", function(){
@@ -18,13 +19,22 @@ gulp.task("stylus", function(){
 		.pipe(gulp.dest("assets/css/"));
 });
 
+gulp.task("lint", function(){
+	gulp.src(".assets/js/*.js")
+		.pipe(eslint())
+		.pipe(eslint.format())
+		.pipe(eslint.failOnError());
+});
+
 // Watch all tasks
 gulp.task("watch", function(){
 	// Stylus
-	gulp.watch("./src/stylus/*.styl", ["stylus"]);
+	gulp.watch(["./src/stylus/*.styl"], ["stylus"]);
 
 	// Jade
 	gulp.watch(["./src/*.jade" ,"./src/*/**.jade"], ["jade"]);
+
+	gulp.watch(["./assets/js/*.js"], ["lint"]);
 });
 
 // Default task
