@@ -209,6 +209,13 @@ input[type="date"] {
   width: 96%;
   margin-right: 10px;
 }
+input[type=date]::-webkit-clear-button,
+input[type=date]::-webkit-inner-spin-button {
+  display: none;
+}
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+  background-color: #00709e;
+}
 input[type="text"]:focus,
 input[type="email"]:focus,
 .formBody select:focus,
