@@ -127,6 +127,12 @@ article a {
 .mapa {
   width: 100%;
   height: 800px;
+  position: relative;
+}
+.mapa .prevenirScroll {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .mapa iframe {
   width: 100%;
