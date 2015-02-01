@@ -1,4 +1,4 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   body {
     background-size: 586px 334px;
     background-position-x: -160px;
@@ -7,6 +7,12 @@
   .mainHeader ul li:first-child,
   .mainHeader ul li:last-child {
     display: none;
+  }
+  .mainHeader ul {
+    height: 46px;
+  }
+  .mainHeader .logotipo {
+    width: 115px;
   }
   .home {
     height: 558px;
@@ -30,12 +36,13 @@
   }
   .controls {
     margin-top: 20px;
+justify-content
   }
   .controls .btn {
     width: 169px;
   }
   .facaparte {
-    height: 562px;
+    height: 567px;
     align-items: flex-end;
     background-repeat: no-repeat;
     background-attachment: initial;
@@ -59,10 +66,31 @@
   .facaparte article .btn {
     margin: 25px auto;
   }
-  .mainFooter {
-    margin-top: 20px;
+  .formLightBox {
+    width: 98%;
   }
   .mainFooter .logotipoBottom img {
     width: 28px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .controls .btn {
+    width: 150px;
+  }
+  .home article .slide {
+    height: 88px;
+  }
+  .proximo,
+  .registar {
+    width: 137px;
+  }
+  .mainFooter p {
+    font-size: 10px;
+  }
+}
+/* Tablets */
+@media screen and (max-width: 768px) {
+  body {
+    background-position-x: -166px;
   }
 }

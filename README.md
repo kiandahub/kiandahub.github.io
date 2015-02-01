@@ -42,8 +42,13 @@ A directoria src/ contem o código fonte em .jade (HTML) e .styl (CSS).
 ##TO-DO
 
 ~~Enviar os dados do form no Google Drive Spreadsheets~~
+
 ~~Adicionar o rodapé.~~
-Optimização para os mobiles (responsive design).
+
+~~Optimização para os mobiles (responsive design).
+
 Estilizar melhor o input[type="date"]
+
 Validar os campos do formulário.
+
 Modularizar o ficheiro main.styl (estilos css).

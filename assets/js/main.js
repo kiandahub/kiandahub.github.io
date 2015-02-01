@@ -7,7 +7,7 @@ var BODY = document.getElementsByTagName("body"),
 	header = document.querySelector(".mainHeader");
 
 window.addEventListener("scroll", function() {
-	//console.log(window.scrollY);
+	//
 }, false);
 
 /* ---- Lightbox ---- */
@@ -33,6 +33,12 @@ fecharBT.addEventListener("click", function(){
 var select_interesse = document.querySelector(".interessado");
 var proximo = document.querySelector(".proximo");
 var registar = document.querySelector(".registar");
+
+// Campos origatórios.
+var nome = document.querySelector(".i_nome"),
+	email = document.querySelector(".i_email"),
+	pais = document.querySelector(".i_pais");
+
 
 // Enable o botão próximo quando selecionado um item da lista
 select_interesse.addEventListener("change", function(){
@@ -77,50 +83,38 @@ var newForm = function(nomeDoForm){
 	// Enable o botão registar
 	registar.disabled = false;
 
-	console.log(formulario.action);
-
 	// Submit
 	registar.addEventListener("click", function(){
-		formulario.submit();
-	}, false)
+
+		if(nomeDoForm == "Startup"){
+			if(Valid("req_startup") != false){
+				formulario.submit();
+			}
+		}
+
+		if(nomeDoForm == "Investir em startups"){
+			if(Valid("req_investidor") != false){
+				formulario.submit();
+			}
+		}
+
+		if(nomeDoForm == "Ser um mentor"){
+			if(Valid("req_mentor") != false){
+				formulario.submit();
+			}
+		}
+
+	}, false);
 
 }
 
 // Escolha de algum item na lista de interesse
 proximo.addEventListener("click", function(){
 
-	newForm(select_interesse.value);
+	if(Valid("required") != false){
 
+		// Invoca a função para selecionar o novo formulário.
+		newForm(select_interesse.value);
+	}
+	
 }, false);
-
-/*var setInputNames = function(role_prefix){
-	// Input elements
-	var nome = document.querySelector(".i_nome").name = role_prefix.nome;
-	var email = document.querySelector(".i_email").name = role_prefix.;
-	var telefone = document.querySelector(".i_telefone").name = role_prefix.;
-	var pais = document.querySelector(".i_pais").name = role_prefix.;
-	var morada = document.querySelector(".i_morada").name = role_prefix.;
-	var data_de_nascimento = document.querySelector(".i_data_de_nascimento").name = role_prefix.;
-	var nivel_academico = document.querySelector(".i_nivel_academico").name = role_prefix.;
-	var interessado_em = document.querySelector(".i_interessado_em").name = role_prefix.;
-
-	// Startups
-	var nome_da_startup = document.querySelector(".i_nome_da_startup").name = role_prefix.;
-	var url = document.querySelector(".i_").name = role_prefix.;
-	var email_da_startup = document.querySelector(".i_email_da_startup").name = role_prefix.;
-	var sobre_a_startup = document.querySelector(".i_sobre_a_startup").name = role_prefix.;
-
-	// Investidores
-	var empresa = document.querySelector(".i_empresa").name = role_prefix.;
-	var cargo = document.querySelector(".i_cargo").name = role_prefix.;
-	var ja_investiu = document.querySelector(".i_ja_investiu").name = role_prefix.;
-	var projectos_investidos = document.querySelector(".i_projectos_investidos").name = role_prefix.;
-
-	// Mentores
-	var empresa_mentor = document.querySelector(".i_empresa_mentor").name = role_prefix.;
-	var cargo_mentor = document.querySelector(".i_cargo_mentor").name = role_prefix.;
-	var ja_foi_mentor = document.querySelector(".i_ja_foi_mentor").name = role_prefix.;
-	var fale_experiencia = document.querySelector(".i_fale_sobre").name = role_prefix.;
-
-
-}*/
