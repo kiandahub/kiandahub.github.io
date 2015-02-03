@@ -15,7 +15,7 @@ var Valid = function(elementos){
 			if(_elementos[i].value == ""){
 
 				// Muda a cor do background
-				_elementos[i].style.backgroundColor = "#4a0708";
+				_elementos[i].style.backgroundColor = "#333";
 				
 				// Retorna falso
 				finalReturn = false;
