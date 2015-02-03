@@ -69,6 +69,12 @@ justify-content
   .formLightBox {
     width: 98%;
   }
+  .mapa .mapsDesktop {
+    display: none;
+  }
+  .mapa .mapsMobile {
+    display: block;
+  }
   .mainFooter .logotipoBottom img {
     width: 28px;
   }

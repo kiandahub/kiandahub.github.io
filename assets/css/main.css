@@ -129,6 +129,9 @@ article a {
   height: 800px;
   position: relative;
 }
+.mapa .mapsMobile {
+  display: none;
+}
 .mapa .prevenirScroll {
   width: 100%;
   height: 100%;
