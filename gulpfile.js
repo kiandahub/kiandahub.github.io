@@ -29,7 +29,7 @@ gulp.task("lint", function(){
 // Watch all tasks
 gulp.task("watch", function(){
 	// Stylus
-	gulp.watch(["./src/stylus/*.styl"], ["stylus"]);
+	gulp.watch(["./src/stylus/*/**.styl", "./src/stylus/*.styl"], ["stylus"]);
 
 	// Jade
 	gulp.watch(["./src/*.jade" ,"./src/*/**.jade"], ["jade"]);
