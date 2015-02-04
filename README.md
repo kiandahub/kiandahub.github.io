@@ -45,10 +45,10 @@ A directoria src/ contem o código fonte em .jade (HTML) e .styl (CSS).
 
 ~~Adicionar o rodapé.~~
 
-~~Optimização para os mobiles (responsive design).
+~~Optimização para os mobiles (responsive design).~~
 
-Estilizar melhor o input[type="date"]
+~~Estilizar melhor o input[type="date"]~~
 
-Validar os campos do formulário.
+~~Validar os campos do formulário.~~
 
 Modularizar o ficheiro main.styl (estilos css).
