@@ -1,3 +1,4 @@
+/* Smartphones */
 @media screen and (max-width: 480px) {
   body {
     background-size: 586px 334px;
@@ -98,5 +99,15 @@ justify-content
 @media screen and (max-width: 768px) {
   body {
     background-position-x: -166px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .formLightBox {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .formLightBox {
+    width: 60%;
   }
 }
