@@ -37,7 +37,6 @@
   }
   .controls {
     margin-top: 20px;
-justify-content
   }
   .controls .btn {
     width: 169px;
@@ -45,6 +44,7 @@ justify-content
   .facaparte {
     height: 567px;
     align-items: flex-end;
+    -webkit-box-align: end;
     background-repeat: no-repeat;
     background-attachment: initial;
     background-size: 586px 334px;
@@ -63,6 +63,7 @@ justify-content
   }
   .facaparte article a {
     display: flex;
+    display: -webkit-box;
   }
   .facaparte article .btn {
     margin: 25px auto;

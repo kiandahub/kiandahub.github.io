@@ -283,6 +283,7 @@ textarea {
 .formBody .subForm {
   width: 100%;
   display: flex;
+  display: -webkit-box;
 }
 ::-webkit-input-placeholder {
   color: #fff;
