@@ -178,18 +178,16 @@ article a {
   top: 0;
   left: 0;
   background-color: rgba(0,0,0,0.5);
-  display: flex;
-  display: -webkit-box;
   justify-content: center;
   -webkit-box-pack: center;
   align-items: center;
   -webkit-box-align: center;
-  display: none;
+  display: -webkit-box;
 }
 .formLightBox {
   width: 30%;
   background-color: #50a2de;
-  height: 500px;
+  height: 550px;
   border-radius: 3px;
   padding-top: 10px;
   position: relative;
@@ -229,8 +227,8 @@ input[type="date"] {
   transition: background-color 0.5s;
 }
 input[type="date"] {
-  width: 96%;
-  margin-right: 10px;
+  width: 98%;
+  margin-bottom: 10px;
 }
 input[type=date]::-webkit-clear-button,
 input[type=date]::-webkit-inner-spin-button {
@@ -283,7 +281,7 @@ textarea {
 .formBody .subForm {
   width: 100%;
   display: flex;
-  display: -webkit-box;
+/*display -webkit-box*/
 }
 ::-webkit-input-placeholder {
   color: #fff;
@@ -305,17 +303,20 @@ textarea {
   border-bottom-right-radius: 3px;
   display: flex;
   display: -webkit-box;
+  -webkit-box-pack: center;
   align-items: center;
   -webkit-box-align: center;
 }
 .formLightBox footer .wrap {
-  display: flex;
-  display: -webkit-box;
-  justify-content: space-between;
-  -webkit-box-pack: center;
   width: 90%;
   height: 50px;
   margin: 0 auto;
+}
+.formLightBox footer .wrap .btn:first-child {
+  float: left;
+}
+.formLightBox footer .wrap .btn:last-child {
+  float: right;
 }
 .formLightBox footer .proximo:disabled,
 .formLightBox footer .registar:disabled {

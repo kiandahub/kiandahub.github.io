@@ -20,6 +20,7 @@ var	lightbox = document.querySelector(".form_fazerparte");
 // Abre o lightbox / formulário
 inscrever_me.addEventListener("click", function(){
 	lightbox.style.display = "flex";
+	lightbox.style.display = "-webkit-box";
 }, false);
 
 // Fecha o lightbox / formulário
