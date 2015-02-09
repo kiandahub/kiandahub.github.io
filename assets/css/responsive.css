@@ -36,7 +36,8 @@
     height: 75px;
   }
   .controls {
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
+    display: block !important;
   }
   .controls .btn {
     width: 169px;
