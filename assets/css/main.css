@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0;
 }
-input {
-  -webkit-appearence: none;
-  -moz-appearence: none;
-}
 @font-face {
   font-family: "Lato-Black";
   src: url("../fonts/Lato-Black.ttf");
@@ -113,6 +109,8 @@ article .title,
   cursor: pointer;
   font-family: "Lato-Regular";
   transition: background-color 0.5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .btn:focus {
   outline: none;
@@ -233,6 +231,8 @@ input[type="date"] {
 input[type="date"] {
   width: 98%;
   margin-bottom: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 input[type=date]::-webkit-clear-button,
 input[type=date]::-webkit-inner-spin-button {
@@ -262,6 +262,8 @@ input[type="date"]:focus {
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   transition: background-color 0.5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 textarea {
   width: 96%;
