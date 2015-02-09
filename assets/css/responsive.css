@@ -67,9 +67,13 @@
   }
   .facaparte article .btn {
     margin: 25px auto;
+    display: block;
   }
   .formLightBox {
     width: 98%;
+  }
+  .formLightBox .btn {
+    width: 140px;
   }
   .mapa .mapsDesktop {
     display: none;
@@ -102,12 +106,12 @@
     background-position-x: -166px;
   }
 }
-@media screen and (max-width: 590px) {
+@media screen and (min-width: 590px) {
   .formLightBox {
     width: 80%;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (min-width: 850px) {
   .formLightBox {
     width: 60%;
   }
