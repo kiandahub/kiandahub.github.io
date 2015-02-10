@@ -1,4 +1,9 @@
 /* Tablets */
+@media screen and (max-width: 1024px) {
+  .formLightBox {
+    width: 42%;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     background-position-x: -166px;
@@ -17,11 +22,6 @@
   }
   .mapa .mapsMobile {
     display: block;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .formLightBox {
-    width: 42%;
   }
 }
 /* Smartphones */
