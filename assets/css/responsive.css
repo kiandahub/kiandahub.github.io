@@ -8,8 +8,9 @@
     width: 60%;
   }
   .facaparte {
-    background-size: 1318px 1045px;
-/*background-position-x -242px*/
+    background-size: 1389px 1045px;
+    background-attachment: initial;
+    background-position-x: -242px;
   }
   .mapa iframe {
     display: none;
