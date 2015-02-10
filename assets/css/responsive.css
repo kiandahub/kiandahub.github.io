@@ -126,4 +126,8 @@
   .mainFooter p {
     font-size: 10px;
   }
+  .subForm input[type="text"],
+  .subForm input[type="email"] {
+    width: 45%;
+  }
 }
