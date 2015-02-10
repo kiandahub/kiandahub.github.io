@@ -290,18 +290,19 @@ textarea
 
 .formBody .subForm
 	width 100%
-	display flex
-	/*display -webkit-box*/
+	
+.formBody .subForm input:first-child
+	float left
+	
+.formBody .subForm input:last-child
+	float right
 
 ::-webkit-input-placeholder
 	color #FFF	
 	
 .subForm input[type="text"], .subForm input[type="email"]
 	width 47%
-	
-.subForm input:last-child
-	margin-left 10px
-	
+		
 .formLightBox footer
 	width 100%
 	height 87px
