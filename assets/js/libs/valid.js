@@ -1,6 +1,6 @@
 var Valid = function(elementos){
 	
-	elementos = "." + elementos;
+	var elementos = "." + elementos;
 
 	// Propriedades
 	var _elementos = document.querySelectorAll(elementos);

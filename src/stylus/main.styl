@@ -180,8 +180,28 @@ article a
 .facaparte article .btn
 	margin-left 0
 	
+.newsletter_box
+	width 50%
+	height 200px
+	border-radius 3px
+	padding-top 10px
+	background-color #50a2de
+	transition height .5s
+	-webkit-transition height .5s
+	-moz-transition height .5s
+	-ms-transition height .5s
+	-o-transition height .5s
+	transition width .5s
+	-webkit-transition width .5s
+	-moz-transition width .5s
+	-ms-transition width .5s
+	-o-transition width .5s
+		
+.newsletter_bt
+	margin-left 10px !important
+
 /* lightbox */ 
-.form_fazerparte
+.form_fazerparte, .newsletter
 	width 100%
 	height 100%
 	position absolute
@@ -194,6 +214,18 @@ article a
 	-webkit-box-align center
 	display none
 	
+.newsletter
+	display flex
+
+.newsletter form
+	width 95%
+	margin 10px auto
+	
+.newsletter form .erro
+	font-size 14px
+	color #333
+	display none
+
 .formLightBox
 	width 30%
 	background-color #50a2de
@@ -201,14 +233,24 @@ article a
 	border-radius 3px
 	padding-top 10px
 	position relative
+	transition height .5s
+	-webkit-transition height .5s
+	-moz-transition height .5s
+	-ms-transition height .5s
+	-o-transition height .5s
+	transition width .5s
+	-webkit-transition width .5s
+	-moz-transition width .5s
+	-ms-transition width .5s
+	-o-transition width .5s
 	
-.formLightBox .fechar
+.formLightBox .fechar, .newsletter_box .fechar
 	color #FFF
 	float right
 	cursor pointer
 	margin-right 10px
 
-.formLightBox header
+.formLightBox header, .newsletter_box header
 	text-align center
 
 .formLightBox .desc
@@ -268,7 +310,6 @@ input[type="text"]:focus, input[type="email"]:focus, .formBody select:focus, tex
 	-webkit-appearance none
 	-moz-appearance none
 
-	
 textarea
 	width 96%
 	height 100px
@@ -317,6 +358,26 @@ textarea
 	align-items center
 	-webkit-box-align center
 	
+.newsletter_box form
+	position relative
+	
+.newsletter_box .footer
+	width 50%
+	height 70px
+	//bottom 0
+	background-color #DDD
+	position absolute
+	border-bottom-left-radius 3px
+	border-bottom-right-radius 3px
+	display flex
+	display -webkit-box
+	-webkit-box-pack center
+	align-items center
+	-webkit-box-align center
+	
+.newsletter_box .footer .btn
+	margin-top 0
+
 .formLightBox footer .wrap
 	width 90%
 	height 50px
