@@ -10,7 +10,63 @@ var header = document.querySelector(".mainHeader");
 // DOM
 var fecharBT = document.querySelector(".fechar"),
 	inscreverMe = document.querySelector(".inscricao"),
-	lightbox = document.querySelector(".form_fazerparte");
+	lightbox = document.querySelector(".form_fazerparte"),
+	newsletterBox = document.querySelector(".newsletter"),
+	newsletterBt = document.querySelector(".newsletter_bt"),
+	subscribeBt = document.querySelector(".subscribe"),
+	emailSubscribe = document.querySelector(".news_email"),
+	newsletterForm = document.querySelector(".newsletterForm"),
+	errorMsg = document.querySelector(".erro"),
+	closeBt = document.querySelector(".closeBt");
+
+// Pattern to validate e-mail from http://www.sitepoint.com/javascript-validate-email-address-regex/
+var regExp = /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/;
+
+// Show the lightbox
+newsletterBt.addEventListener("click", function(){
+	
+	newsletterBox.style.display = "flex";
+	newsletterBox.style.display = "-webkit-box";
+
+}, false);
+
+// Hide the lightbox
+closeBt.addEventListener("click", function(){
+	
+	newsletterBox.style.display = "none";
+	errorMsg.style.display = "none";
+	emailSubscribe.value = "";
+
+}, false)
+
+subscribeBt.addEventListener("click", function(){
+	
+	/*console.log(emailSubscribe.value);
+	console.log(regExp.test(emailSubscribe.value));*/
+
+	if(emailSubscribe.value == "" || !regExp.test(emailSubscribe.value)){
+
+		// Show error message
+		errorMsg.style.display = "block";
+
+		return false;
+
+	}else{
+
+		// Send to Mailchimp
+		newsletterForm.submit();
+
+		// Turn off the lightbox
+		newsletterBox.style.display = "none";
+		errorMsg.style.display = "none";
+		emailSubscribe.value = "";
+
+		return true;
+
+	}
+
+}, false);
+
 
 // Abre o lightbox / formulário
 inscreverMe.addEventListener("click", function(){
