@@ -19,7 +19,7 @@ var fecharBT = document.querySelector(".fechar"),
 	errorMsg = document.querySelector(".erro"),
 	closeBt = document.querySelector(".closeBt");
 
-// Pattern to validate e-mail from http://www.sitepoint.com/javascript-validate-email-address-regex/
+// Pattern to validate e-mail from http://codereview.stackexchange.com/questions/65190/email-validation-using-javascript
 var regExp = /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/;
 
 // Show the lightbox
