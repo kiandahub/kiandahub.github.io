@@ -104,6 +104,7 @@
     width: 96%;
     color: #333;
     text-align: center;
+    margin-bottom: 33px;
   }
   .facaparte article p {
     color: #333;
@@ -115,33 +116,32 @@
     display: flex;
     display: -webkit-box;
   }
-  .facaparte article .btn {
-    margin: 25px auto;
-    display: block;
+  .facaparte article .controls {
+    margin-top: 10px;
   }
-  .formLightBox {
-    width: 98%;
-  }
-  .formLightBox .btn {
-    width: 140px;
-  }
-  .mapa .mapsDesktop {
-    display: none;
-  }
-  .mapa .mapsMobile {
-    display: block;
-  }
-  .mainFooter .logotipoBottom img {
-    width: 28px;
-  }
-  .newsletter_box {
-    width: 90%;
-    height: 275px;
-  }
-  .newsletter_box .footer {
-    width: 90%;
-    height: 70px;
-  }
+}
+.formLightBox {
+  width: 98%;
+}
+.formLightBox .btn {
+  width: 140px;
+}
+.mapa .mapsDesktop {
+  display: none;
+}
+.mapa .mapsMobile {
+  display: block;
+}
+.mainFooter .logotipoBottom img {
+  width: 28px;
+}
+.newsletter_box {
+  width: 90%;
+  height: 275px;
+}
+.newsletter_box .footer {
+  width: 90%;
+  height: 70px;
 }
 @media screen and (max-width: 320px) {
   .controls .btn {
