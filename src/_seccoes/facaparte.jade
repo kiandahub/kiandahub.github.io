@@ -2,7 +2,12 @@ section(class="facaparte" id="inscricao")
 	article
 		p.title Ser uma casa de Startups é um dos nossos objectivos.
 		p Se você possuí, pretende criar ou ajudar uma startup a mudar Angola, então inscreva-se no nosso formulário para fazer parte do KiandaHUB.
-		a(href="#fazerparte" class="scroll")
+		//a(href="#fazerparte" class="scroll")
+		.controls
 			input(type="button" value="Inscrever-me" class="btn inscricao")
+			input(type="button" value="Newsletter" class="btn newsletter_bt")
 	// Formulário fazer parte
 	include ./form
+
+	// Newsletter
+	include ./newsletter

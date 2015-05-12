@@ -50,5 +50,6 @@ A directoria src/ contem o código fonte em .jade (HTML) e .styl (CSS).
 ~~Estilizar melhor o input[type="date"]~~
 
 ~~Validar os campos do formulário.~~
+Responder os emails após o cadastro com a API do MailChimp.
 
 Modularizar o ficheiro main.styl (estilos css).
