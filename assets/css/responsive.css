@@ -48,7 +48,7 @@
   }
 }
 /* Smartphones */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   body {
     background-size: 586px 334px;
     background-position-x: -160px;
@@ -120,9 +120,6 @@
     margin-top: 10px;
   }
 }
-.formLightBox {
-  width: 98%;
-}
 .formLightBox .btn {
   width: 140px;
 }
@@ -134,14 +131,6 @@
 }
 .mainFooter .logotipoBottom img {
   width: 28px;
-}
-.newsletter_box {
-  width: 90%;
-  height: 275px;
-}
-.newsletter_box .footer {
-  width: 90%;
-  height: 70px;
 }
 @media screen and (max-width: 320px) {
   .controls .btn {
