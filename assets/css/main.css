@@ -174,7 +174,7 @@ article a {
   margin-left: 0;
 }
 .newsletter_box {
-  width: 50% !important;
+  width: 50%;
   height: 200px;
   border-radius: 3px;
   padding-top: 10px;
@@ -218,7 +218,7 @@ article a {
   display: none;
 }
 .formLightBox {
-  width: 30%;
+  width: 37%;
   background-color: #50a2de;
   height: 550px;
   border-radius: 3px;
