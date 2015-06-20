@@ -11,6 +11,10 @@ gulp.task("jade", function(){
 	gulp.src("./src/index.jade")
 		.pipe(jade())
 		.pipe(gulp.dest("./"));
+
+	gulp.src("./src/en/index.jade")
+		.pipe(jade())
+		.pipe(gulp.dest("./en/"));	
 });
 
 gulp.task("stylus", function(){
