@@ -1,0 +1,16 @@
+section.newsletter
+	.newsletter_box
+		.fechar.closeBt x
+		header
+			p.title Subscribe our Newsletter
+			p Enter your email below to receive information related to KiandaHUB: news, dates of dojos and other events.
+
+		//form
+			.wrap
+				input(type="text" placeholder="Seu e-mail aqui" class="news_email")
+		form(action="http://kiandahub.us10.list-manage.com/subscribe/post?u=38329bb2b638c1a08efd01c0b&amp;id=803cb19ae2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletterForm" target="_blank" novalidate)		
+			input(type="email" value="" placeholder="Seu e-mail aqui" name="EMAIL" class="required email news_email" id="mce-EMAIL")
+			//input(type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn")
+			p.erro Insira um endereço de e-mail válido. 
+		.footer
+			input(type="button" value="Subscribe" class="btn subscribe")
