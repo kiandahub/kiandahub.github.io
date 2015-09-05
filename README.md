@@ -7,7 +7,7 @@ O KiandaHub é um espaço de colaboração entre os novos talentos da tecnologia
 Tendo o NodeJS instalado na sua máquina, abra o terminal e execute:
 
 	// entre na directória do projecto  
-	cd landing_page
+	cd kiandahub.github.io
 
 	// Instale as dependências
 	sudo npm i -g gulp && sudo npm i

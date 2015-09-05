@@ -11,15 +11,21 @@ var Valid = function(elementos){
 	for(var i = 0; i < size; i++){
 
 		if(_elementos[i].value != null){
+
+			//console.log(finalReturn);
 			// Se algume elemento tiver valor vazio
 			if(_elementos[i].value == ""){
 
 				// Muda a cor do background
-				_elementos[i].style.backgroundColor = "#333";
-				
+				_elementos[i].style.backgroundColor = "#333";				
+
 				// Retorna falso
 				finalReturn = false;
+			}else{
+				finalReturn = true;
 			}
+		}else{
+			finalReturn = true;
 		}
 	}
 

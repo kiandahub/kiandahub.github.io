@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+html(lang="pt-pt")
+	head
+		meta(charset="UTF-8")
+		title KiandaHUB - Technological innovation center for Startups.
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0")
+		// Meta tags for SEO
+		meta(name="description" content="O KiandaHUB é um centro para startups desenvolverem soluções digitais inovadoras em Luanda")
+		meta(name="keywords" content="TechHUB, Luanda, Angola, Kianda, KiandaHUB, Startups, Startup, Co-working, negócios, soluções, digitais, empreendedorismo")
+		meta(property="og:title" content="KiandaHUB - Centro de inovação e negócios para Startups")
+		meta(property="og:type" content="article")
+		meta(property="og:image" content="http://kiandahub.github.io/assets/img/")
+		meta(property="og:url" content="http://www.kiandahub.com")
+		meta(property="og:description" content="")
+		// Favicon
+		link(rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png")
+		// Stylesheets
+		link(rel="stylesheet" href="../assets/css/main.css")
+		link(rel="stylesheet" href="../assets/css/responsive.css")
+		//link(rel="stylesheet" href="../assets/css/foundation.min.css")
+	body
+		// Cabecalho
+		header.mainHeader.scrollEffect
+			ul
+				li 
+					a(href="#mapa" class="scroll") GET THERE
+				li
+					a(href="#home" class="scroll")
+						img(src="../assets/img/logotipo.png" class="logotipo")
+				li 
+					a(href="#inscricao" class="scroll") SIGN UP
+
+			.languageSwitch
+				p <a href="">EN</a> | <a href="">PT</a>		
+
+		// Home
+		include ../_seccoes_en/home
+
+		// Mapa
+		include ../_seccoes_en/mapa
+
+		//Faça parte
+		include ../_seccoes_en/facaparte
+
+		//Newsletter
+		//include ../_seccoes_en/newsletter
+
+		// Rodapé
+		include ../_seccoes_en/footer
+	
+		// Javascript
+		script(src="../assets/js/libs/scroll.min.js")
+		script(src="../assets/js/slide.js")
+		script(src="../assets/js/libs/valid.js")
+		script(src="../assets/js/main.js")
+	
+		// Google Analytics
+		script.
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-59352743-1', 'auto');
+			ga('send', 'pageview');

@@ -1,5 +1,5 @@
 /* MAIN */
-  Develop & Main Design: Criativament (Flowck II)
+  Development & Main Design: Criativament (Flowck II)
   Twitter: @flowck
   Site: http://flowck.github.io
 
@@ -8,7 +8,7 @@
   Tools: SublimeText3, Photoshop CC, Git, Github, Jade, Stylus, Gulp, Google Forms
 
 /* SPECIAL THANKS */
-  Designer: Keven Chantre, Mauro Yange, Joel Epalangs
+  Designer: Keven Chantre, Mauro Yange, Joel Epalanga,
 
-  Designer: Flowck II
+  Design: Flowck II
   Twitter: @flowck

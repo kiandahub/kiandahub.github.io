@@ -163,7 +163,6 @@ var newForm = function(nomeDoForm){
 					formulario.submit();
 				}
 				break;
-
 		}
 
 	}, false);
@@ -173,7 +172,7 @@ var newForm = function(nomeDoForm){
 // Escolha de algum item na lista de interesse
 proximo.addEventListener("click", function(){
 
-	if(Valid("required") != false){
+	if(Valid("required_") != false){
 
 		// Invoca a função para selecionar o novo formulário.
 		newForm(select_interesse.value);
